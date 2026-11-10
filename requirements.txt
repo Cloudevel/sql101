@@ -1,0 +1,7 @@
+# Motor de base de datos y ejecución de SQL en celdas de Jupyter
+duckdb>=1.4
+jupysql>=0.10
+ipykernel
+# Apéndice de BigQuery (opcional)
+google-cloud-bigquery
+bigquery-magics
