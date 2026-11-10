@@ -1,7 +1,29 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook
+.ipynb_checkpoints
+.jupysql/
+
+# Entornos
+.venv
+venv/
+env/
+ENV/
+
+# Datos generados: se crean con scripts/generar_datos.py y scripts/cargar_datos.py
 data/csv/
 data/*.duckdb
 data/*.duckdb.wal
-data/*.sqlite
-.ipynb_checkpoints/
-__pycache__/
-.jupysql/
+
+# Credenciales de Google Cloud (apéndice de BigQuery)
+*.json.key
+application_default_credentials.json
+
+# Sistema operativo y editores
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

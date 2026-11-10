@@ -1,7 +1,14 @@
-# Motor de base de datos y ejecución de SQL en celdas de Jupyter
-duckdb>=1.4
-jupysql>=0.10
-ipykernel
-# Apéndice de BigQuery (opcional)
-google-cloud-bigquery
-bigquery-magics
+# Entorno del curso sql101 "SQL para Ingeniería y Analítica de Datos" (Python 3.12)
+# Versiones fijadas el 2026-11-10: no actualizar durante una edición del curso.
+# Motor de base de datos (MERGE requiere DuckDB 1.4 o superior)
+duckdb==2.0.0
+# SQL en las celdas de Jupyter
+jupysql==0.11.1
+# Apéndice de BigQuery (opcional: requiere cuenta de Google Cloud)
+google-cloud-bigquery==3.47.0
+bigquery-magics==0.15.2
+# Jupyter
+jupyterlab==4.6.6
+ipykernel==7.4.0
+nbformat==5.11.1
+nbclient==0.11.0
