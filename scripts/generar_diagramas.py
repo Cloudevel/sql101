@@ -437,27 +437,20 @@ def orden_evaluacion(ax, x0, x1, y, with_arrow=True):
 # semilla 2026). Los conteos y filas dibujados coinciden con estas consultas.
 # ---------------------------------------------------------------------------
 
-# Consulta de la celda adyacente en «Agregaciones» (HAVING), sin FETCH FIRST.
+# Consulta de la celda adyacente en «Agregaciones» (HAVING y orden lógico).
 # HAVING COUNT(*) > 35 deja 8 marcas; Estuario (35) y Cobalto (32) no pasan.
+# ORDER BY productos DESC, brand desempata de forma determinista (Hilo Fino
+# antes que Marea; Bosque Norte antes que Quetzal).
 QUERY_HAVING = [
     "SELECT brand, COUNT(*) AS productos",
     "FROM products",
     "WHERE department = 'Men'",
     "GROUP BY brand",
     "HAVING COUNT(*) > 35",
-    "ORDER BY productos DESC;",
-]
-# Misma consulta, con FETCH FIRST, para el diagrama del orden lógico.
-# La celda adyacente no incluye esa cláusula; el diagrama lo indica.
-QUERY_ORDEN = [
-    "SELECT brand, COUNT(*) AS productos",
-    "FROM products",
-    "WHERE department = 'Men'",
-    "GROUP BY brand",
-    "HAVING COUNT(*) > 35",
-    "ORDER BY productos DESC",
+    "ORDER BY productos DESC, brand",
     "FETCH FIRST 5 ROWS ONLY;",
 ]
+QUERY_ORDEN = QUERY_HAVING
 
 # Filas de FROM que se muestran (hay más: se indica con «…»).
 # (brand, department) tomados de products reales.
@@ -490,8 +483,7 @@ GROUP_COUNTS = [
     ("Bosque Norte", 36),
     ("Marea", 39),
 ]
-# Resultado de ORDER BY productos DESC (empates: Hilo Fino antes que Marea,
-# Quetzal antes que Bosque Norte, como los devuelve DuckDB).
+# Resultado de ORDER BY productos DESC, brand (empate determinista).
 ORDER_BY_COUNTS = [
     ("Roble", 43),
     ("Altamira", 41),
@@ -499,8 +491,8 @@ ORDER_BY_COUNTS = [
     ("Marea", 39),
     ("Lince", 38),
     ("Pampa", 37),
-    ("Quetzal", 36),
     ("Bosque Norte", 36),
+    ("Quetzal", 36),
 ]
 FETCH_COUNTS = ORDER_BY_COUNTS[:5]
 
@@ -661,9 +653,9 @@ def diagrama_orden_logico():
     n_rows = len(GROUP_COUNTS) + 1
     body_h = n_rows * PILL_H + (n_rows - 1) * PILL_GAP + PILL_H + 0.20
     cols_w = sum(col_ws) + sum(gaps)
-    # espacio para el texto + caja de código + nota de FETCH
+    # espacio para el texto + caja de código
     top_text = 0.45
-    code_est_h = 0.12 * 2 + 7 * 0.205 + 0.55
+    code_est_h = 0.12 * 2 + 7 * 0.205
     mid_gap = 0.70  # etiqueta «Orden de evaluación» + flecha
     bot = 0.70
     width = left_cols + cols_w + 0.25
@@ -684,19 +676,7 @@ def diagrama_orden_logico():
         clip_on=False,
     )
     _, code_h, code_bot = code_block(ax, 0.25, height - 0.12 - top_text, QUERY_ORDEN)
-    ax.text(
-        0.25,
-        code_bot - 0.07,
-        "La celda adyacente no incluye FETCH FIRST;\nse añade aquí para completar el orden de evaluación.",
-        ha="left",
-        va="top",
-        fontsize=8.0,
-        fontproperties=FONT_REGULAR,
-        color=NAVY_DARK,
-        zorder=5,
-        clip_on=False,
-    )
-    y_label = code_bot - 0.58
+    y_label = code_bot - 0.18
     xs = []
     x = left_cols
     for i, w in enumerate(col_ws):
@@ -746,7 +726,7 @@ def diagrama_orden_logico():
     caption(ax, xs[4] + col_ws[4] / 2, ys_g[-1] - PILL_H / 2 - 0.10, "filtra grupos\nCOUNT(*) > 35")
     caption(ax, xs[5] + col_ws[5] / 2, ys_g[-1] - PILL_H / 2 - 0.10, "brand, productos")
     if ys_o:
-        caption(ax, xs[6] + col_ws[6] / 2, ys_o[-1] - PILL_H / 2 - 0.10, "productos\ndescendente")
+        caption(ax, xs[6] + col_ws[6] / 2, ys_o[-1] - PILL_H / 2 - 0.10, "productos DESC,\nbrand")
     if ys_f:
         caption(ax, xs[7] + col_ws[7] / 2, ys_f[-1] - PILL_H / 2 - 0.10, "5 filas")
 
@@ -765,7 +745,7 @@ def diagrama_where_having():
     body_h = n_rows * PILL_H + (n_rows - 1) * PILL_GAP + PILL_H + 0.20
     cols_w = sum(col_ws) + sum(gaps)
     top_text = 0.45
-    code_est_h = 0.12 * 2 + 6 * 0.205
+    code_est_h = 0.12 * 2 + 7 * 0.205
     mid_gap = 0.70
     bot = 0.70
     width = left_cols + cols_w + 0.25
