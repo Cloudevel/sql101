@@ -76,7 +76,7 @@ A lo largo del taller se analizan los datos de **TheLook**, una tienda de ropa e
 - [«Denormalización»](08_denormalizacion.ipynb)
 
 #### 🔹 Módulo 1: Fundamentos
-* «Introducción» - *SQL* en ingeniería y analítica; historia e importancia de *ANSI SQL*; dialectos; por qué *DuckDB* y sus alternativas; entorno, celdas `%%sql` y datos del taller; `INFORMATION_SCHEMA`.
+* «Introducción» - tablas, relaciones y álgebra relacional; *SQL* en ingeniería y analítica; historia de *SQL* e importancia de *ANSI SQL*; dialectos; por qué *DuckDB* y sus alternativas; entorno, celdas `%%sql` y datos del taller; `INFORMATION_SCHEMA`.
 * «Consultas básicas» - `SELECT`, alias y columnas calculadas; `SELECT *` en motores columnares; `DISTINCT`; `WHERE` con `AND`, `OR`, `IN`, `BETWEEN`, `LIKE`; `NULL` y `COALESCE`; `ORDER BY`; `FETCH FIRST` y `LIMIT` (y por qué limitar el resultado no limita la búsqueda); orden lógico de ejecución.
 
 #### 🔹 Módulo 2: Resumir y combinar

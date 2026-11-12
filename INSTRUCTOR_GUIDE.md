@@ -30,7 +30,7 @@ Al terminar, el participante podrá:
 
 | Min | Bloque | Notebook |
 |---|---|---|
-| 25 | *SQL* en ingeniería y analítica, *ANSI SQL*, *DuckDB*, entorno y datos | «Introducción» |
+| 25 | Tablas y relaciones, *SQL* en ingeniería y analítica, *ANSI SQL*, *DuckDB*, entorno y datos | «Introducción» |
 | 50 | Consultas básicas y ejercicios 1 a 4 | «Consultas básicas» |
 | 40 | Agregaciones y ejercicios 1 a 3 | «Agregaciones» |
 | 45 | `JOIN`, duplicación de filas, `CASE` y ejercicios 1 a 3 | «Combinación de tablas y lógica condicional» |
