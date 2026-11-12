@@ -60,7 +60,7 @@ A lo largo del taller se analizan los datos de **TheLook**, una tienda de ropa e
 
 ### Práctica
 
-* Los *notebooks* de «Introducción» a «Denormalización» terminan con **ejercicios** y **retos opcionales**; se trabajan en clase y como práctica.
+* Los *notebooks* de «Introducción» a «Denormalización» terminan con **ejercicios de clase** y, en la sección **Práctica adicional**, ejercicios y retos para resolver fuera de clase, de forma autónoma.
 * Las versiones resueltas están en `soluciones/` (`NN_..._soluciones.ipynb`).
 
 ### 📚 Contenidos

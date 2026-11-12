@@ -24,24 +24,24 @@ Al terminar, el participante podrá:
 3. Trabajar con fechas e intervalos y estructurar consultas complejas con *CTE*.
 4. Usar funciones de ventana para rankings, deduplicación y comparación entre periodos.
 5. Crear tablas y vistas, y cargar datos de forma incremental con `MERGE`.
-6. Diseñar una tabla denormalizada y validar su granularidad.
+6. Seguir la construcción de una tabla denormalizada, validar su granularidad y consultarla.
 
-**Agenda (360 min):**
+**Agenda (350 min):**
 
 | Min | Bloque | Notebook |
 |---|---|---|
-| 25 | Tablas y relaciones, *OLTP* y *OLAP*, *SQL* en ingeniería y analítica, *ANSI SQL*, *DuckDB*, entorno y datos, y ejercicios 1 a 3 | «Introducción» |
-| 50 | Consultas básicas y ejercicios 1 a 4 | «Consultas básicas» |
+| 35 | Tablas y relaciones, *OLTP* y *OLAP*, *SQL* en ingeniería y analítica, *ANSI SQL*, *DuckDB*, entorno y datos, y ejercicios 1 y 2 | «Introducción» |
+| 45 | Consultas básicas y ejercicios 1 a 4 | «Consultas básicas» |
 | 40 | Agregaciones y ejercicios 1 a 3 | «Agregaciones» |
-| 45 | `JOIN`, duplicación de filas, `CASE` y ejercicios 1 a 4 | «Combinación de tablas y lógica condicional» |
+| 40 | `JOIN`, duplicación de filas, `CASE` y ejercicios 1 a 3 | «Combinación de tablas y lógica condicional» |
 | 15 | Descanso | |
-| 50 | Fechas, subconsultas, *CTE* contra subconsultas y ejercicios 1 a 4 | «Fechas, subconsultas y expresiones de tabla comunes» |
-| 45 | Funciones de ventana y ejercicios 1 a 4 | «Funciones de ventana» |
-| 35 | Tablas, vistas, *DML*, `MERGE` y ejercicios 1 a 3 | «Tablas, vistas y carga de datos» |
-| 25 | Denormalización, arquitecturas de *data warehouse* y ejercicios 1 a 3 | «Denormalización» |
-| 30 | Cierre, dudas y práctica sugerida | |
+| 40 | Fechas, subconsultas, *CTE* contra subconsultas y ejercicios 1 a 3 | «Fechas, subconsultas y expresiones de tabla comunes» |
+| 40 | Funciones de ventana y ejercicios 1 a 3 | «Funciones de ventana» |
+| 40 | Tablas, vistas, *DML* y `MERGE` como ejercicio 3, más los ejercicios 1 y 2 | «Tablas, vistas y carga de datos» |
+| 35 | Denormalización, arquitecturas de *data warehouse*, demostración de la tabla ancha y ejercicios 1 y 2 | «Denormalización» |
+| 20 | Cierre, dudas y práctica sugerida | |
 
-Los ejercicios que no alcancen a resolverse en clase quedan como práctica; los retos son siempre opcionales.
+En clase se resuelven **23 ejercicios** y ningún reto. La sección **Práctica adicional** de cada *notebook* se resuelve fuera de clase, de forma autónoma: **6 ejercicios** y **6 retos**. `MERGE` es el ejercicio 3 de «Tablas, vistas y carga de datos», no una demostración. La construcción de la tabla ancha en «Denormalización» sí es demostración del instructor.
 
 ## Mensajes clave por *notebook*
 
@@ -52,7 +52,7 @@ Los ejercicios que no alcancen a resolverse en clase quedan como práctica; los 
 - «Fechas, subconsultas y expresiones de tabla comunes»: rangos semiabiertos para fechas; *CTE* para pasos de transformación, subconsultas para filtros cortos.
 - «Funciones de ventana»: `ROW_NUMBER` + filtro es el patrón de deduplicación más usado en ingeniería de datos.
 - «Tablas, vistas y carga de datos»: `MERGE` es la base de la carga incremental; deduplicar el lote antes de aplicarlo.
-- «Denormalización»: una tabla denormalizada debe tener exactamente las filas de su tabla de hechos.
+- «Denormalización»: una tabla denormalizada debe tener exactamente las filas de su tabla de hechos. La construcción de la tabla ancha es demostración del instructor.
 
 ## Checklist previa a clase
 
@@ -76,4 +76,4 @@ Los ejercicios que no alcancen a resolverse en clase quedan como práctica; los 
 - **Alumnos que copian consultas a otro motor:** es lo esperado. Si algo falla, revisar las notas de dialecto (comillas, `FETCH FIRST`, fechas).
 - **Resultados vacíos inesperados:** casi siempre es una comparación con `= NULL` o un filtro de texto con mayúsculas distintas.
 - **Cambios del ecosistema:** las versiones están fijadas en `requirements.txt`; no actualizar durante una edición. `MERGE` requiere *DuckDB* 1.4 o superior.
-- **Tiempo insuficiente:** priorizar de «Consultas básicas» a «Funciones de ventana»; «Tablas, vistas y carga de datos» y «Denormalización» pueden presentarse como demostración, y los retos quedan como práctica.
+- **Tiempo insuficiente:** la agenda ya deja la práctica adicional fuera de clase y presenta la construcción de la tabla ancha como demostración. `MERGE` se resuelve como ejercicio en clase. Si aún falta tiempo, compactar las notas de dialecto y no abrir la práctica adicional en aula.
