@@ -6,7 +6,7 @@
 [![Codespaces](https://img.shields.io/badge/GitHub-Codespaces-brightgreen?style=for-the-badge&logo=github&logoColor=white)](https://codespaces.new/Cloudevel/sql101)
 [![License](https://img.shields.io/badge/License-CC--BY%204.0-blue.svg?style=for-the-badge)](LICENSE)
 
-Este repositorio contiene el material oficial del curso **sql101 · SQL para Ingeniería y Analítica de Datos** de **Cloudevel®**, impartido por José Luis Chiquete. El curso enseña *SQL* apegado al estándar *ANSI*, desde la primera consulta hasta las transformaciones que se usan en ingeniería de datos: agregaciones, combinación de tablas, fechas, expresiones de tabla comunes, funciones de ventana, carga incremental con `MERGE` y denormalización.
+Este repositorio contiene el material oficial del taller **sql101 · SQL para Ingeniería y Analítica de Datos** de **Cloudevel®**, impartido por José Luis Chiquete. El taller enseña *SQL* apegado al estándar *ANSI*, desde la primera consulta hasta las transformaciones que se usan en ingeniería de datos: agregaciones, combinación de tablas, fechas, expresiones de tabla comunes, funciones de ventana, carga incremental con `MERGE` y denormalización.
 
 ---
 
@@ -25,9 +25,9 @@ Ninguno. No se requiere experiencia previa con *SQL* ni con *Python*: el código
 
 ---
 
-## 🚀 Acerca del Curso
+## 🚀 Acerca del Taller
 
-Un curso de **6 horas** sobre *notebooks* de *Jupyter* que corren en **GitHub Codespaces**. Cada consulta se escribe y se ejecuta directamente en una celda. Al completarlo serás capaz de:
+Un taller de **6 horas** sobre *notebooks* de *Jupyter* que corren en **GitHub Codespaces**. Cada consulta se escribe y se ejecuta directamente en una celda. Al completarlo serás capaz de:
 
 * **Consultar datos:** seleccionar, filtrar, ordenar y manejar valores nulos correctamente.
 * **Construir indicadores:** agregaciones, agrupamiento y conteo condicional.
@@ -39,13 +39,13 @@ Un curso de **6 horas** sobre *notebooks* de *Jupyter* que corren en **GitHub Co
 
 ### 📐 *ANSI SQL* primero
 
-Todo el *SQL* de las lecciones `01` a `08` es estándar y funciona, con cambios mínimos, en *PostgreSQL*, *BigQuery*, *Snowflake*, *SQL Server* y otros motores. Cuando un motor usa otra sintaxis, se explica en una **nota de dialecto**. El apéndice `09` traslada el curso a *BigQuery*.
+Todo el *SQL* de «Introducción» a «Denormalización» es estándar y funciona, con cambios mínimos, en *PostgreSQL*, *BigQuery*, *Snowflake*, *SQL Server* y otros motores. Cuando un motor usa otra sintaxis, se explica en una **nota de dialecto**. «Apéndice: de *DuckDB* a *BigQuery*» traslada el taller a *BigQuery*.
 
-### 🦆 Motor del curso: *DuckDB*
+### 🦆 Motor del taller: *DuckDB*
 
-**En este curso se usa [*DuckDB*](https://duckdb.org)**, un motor analítico que corre dentro del propio *Codespace*, sin servidor ni cuentas. Se eligió porque está muy apegado al estándar (tipos de fecha reales, funciones de ventana, `MERGE`), almacena los datos por columnas como un *data warehouse* y rechaza las consultas inválidas en lugar de aceptarlas en silencio. La comparación con *SQLite*, *PostgreSQL*, *BigQuery* y otras alternativas está en `01_introduccion.ipynb`.
+**En este taller se usa [*DuckDB*](https://duckdb.org)**, un motor analítico que corre dentro del propio *Codespace*, sin servidor ni cuentas. Se eligió porque está muy apegado al estándar (tipos de fecha reales, funciones de ventana, `MERGE`), almacena los datos por columnas como un *data warehouse* y rechaza las consultas inválidas en lugar de aceptarlas en silencio. La comparación con *SQLite*, *PostgreSQL*, *BigQuery* y otras alternativas está en [«Introducción»](01_introduccion.ipynb).
 
-A lo largo del curso se analizan los datos de **TheLook**, una tienda de ropa en línea ficticia: clientes, órdenes, artículos vendidos, productos y centros de distribución.
+A lo largo del taller se analizan los datos de **TheLook**, una tienda de ropa en línea ficticia: clientes, órdenes, artículos vendidos, productos y centros de distribución.
 
 ---
 
@@ -53,48 +53,48 @@ A lo largo del curso se analizan los datos de **TheLook**, una tienda de ropa en
 
 | Módulo | Temas | Notebooks |
 | :--- | :--- | :--- |
-| 1. Fundamentos | *SQL* en ingeniería y analítica, *ANSI SQL*, *DuckDB*, `SELECT`, `WHERE`, `NULL`, `ORDER BY`, `FETCH FIRST` | `01`-`02` |
-| 2. Resumir y combinar | Agregaciones, `GROUP BY`, `HAVING`, `JOIN`, `CASE` | `03`-`04` |
-| 3. Análisis | Fechas e intervalos, subconsultas, *CTE*, funciones de ventana | `05`-`06` |
-| 4. Ingeniería de datos | *DDL*, *DML*, `MERGE`, vistas, denormalización | `07`-`08` |
-| Apéndice | De *DuckDB* a *BigQuery* | `09` |
+| 1. Fundamentos | *SQL* en ingeniería y analítica, *ANSI SQL*, *DuckDB*, `SELECT`, `WHERE`, `NULL`, `ORDER BY`, `FETCH FIRST` | «Introducción»<br>«Consultas básicas» |
+| 2. Resumir y combinar | Agregaciones, `GROUP BY`, `HAVING`, `JOIN`, `CASE` | «Agregaciones»<br>«Combinación de tablas y lógica condicional» |
+| 3. Análisis | Fechas e intervalos, subconsultas, *CTE*, funciones de ventana | «Fechas, subconsultas y expresiones de tabla comunes»<br>«Funciones de ventana» |
+| 4. Ingeniería de datos | *DDL*, *DML*, `MERGE`, vistas, denormalización | «Tablas, vistas y carga de datos»<br>«Denormalización» |
+| Apéndice | De *DuckDB* a *BigQuery* | «Apéndice: de *DuckDB* a *BigQuery*» |
 
 ### Práctica
 
-* Los *notebooks* `01` a `08` terminan con **ejercicios** y **retos opcionales**; se trabajan en clase y como práctica.
-* Las versiones resueltas están en `soluciones/` (`NN_..._soluciones.ipynb`). El apéndice `09` no tiene ejercicios.
+* Los *notebooks* de «Introducción» a «Denormalización» terminan con **ejercicios** y **retos opcionales**; se trabajan en clase y como práctica.
+* Las versiones resueltas están en `soluciones/` (`NN_..._soluciones.ipynb`). «Apéndice: de *DuckDB* a *BigQuery*» no tiene ejercicios.
 
 ### 📚 Contenidos
 
 #### 🧭 Tabla de contenidos (enlaces rápidos)
-- [01_introduccion.ipynb](01_introduccion.ipynb)
-- [02_consultas_basicas.ipynb](02_consultas_basicas.ipynb)
-- [03_agregaciones.ipynb](03_agregaciones.ipynb)
-- [04_joins_y_case.ipynb](04_joins_y_case.ipynb)
-- [05_fechas_subconsultas_y_cte.ipynb](05_fechas_subconsultas_y_cte.ipynb)
-- [06_funciones_de_ventana.ipynb](06_funciones_de_ventana.ipynb)
-- [07_tablas_vistas_y_carga.ipynb](07_tablas_vistas_y_carga.ipynb)
-- [08_denormalizacion.ipynb](08_denormalizacion.ipynb)
-- [09_apendice_bigquery.ipynb](09_apendice_bigquery.ipynb)
+- [«Introducción»](01_introduccion.ipynb)
+- [«Consultas básicas»](02_consultas_basicas.ipynb)
+- [«Agregaciones»](03_agregaciones.ipynb)
+- [«Combinación de tablas y lógica condicional»](04_joins_y_case.ipynb)
+- [«Fechas, subconsultas y expresiones de tabla comunes»](05_fechas_subconsultas_y_cte.ipynb)
+- [«Funciones de ventana»](06_funciones_de_ventana.ipynb)
+- [«Tablas, vistas y carga de datos»](07_tablas_vistas_y_carga.ipynb)
+- [«Denormalización»](08_denormalizacion.ipynb)
+- [«Apéndice: de *DuckDB* a *BigQuery*»](09_apendice_bigquery.ipynb)
 
 #### 🔹 Módulo 1: Fundamentos
-* `01` - *SQL* en ingeniería y analítica; historia e importancia de *ANSI SQL*; dialectos; por qué *DuckDB* y sus alternativas; entorno, celdas `%%sql` y datos del curso; `INFORMATION_SCHEMA`.
-* `02` - `SELECT`, alias y columnas calculadas; `SELECT *` en motores columnares; `DISTINCT`; `WHERE` con `AND`, `OR`, `IN`, `BETWEEN`, `LIKE`; `NULL` y `COALESCE`; `ORDER BY`; `FETCH FIRST` y `LIMIT` (y por qué limitar el resultado no limita la búsqueda); orden lógico de ejecución.
+* «Introducción» - *SQL* en ingeniería y analítica; historia e importancia de *ANSI SQL*; dialectos; por qué *DuckDB* y sus alternativas; entorno, celdas `%%sql` y datos del taller; `INFORMATION_SCHEMA`.
+* «Consultas básicas» - `SELECT`, alias y columnas calculadas; `SELECT *` en motores columnares; `DISTINCT`; `WHERE` con `AND`, `OR`, `IN`, `BETWEEN`, `LIKE`; `NULL` y `COALESCE`; `ORDER BY`; `FETCH FIRST` y `LIMIT` (y por qué limitar el resultado no limita la búsqueda); orden lógico de ejecución.
 
 #### 🔹 Módulo 2: Resumir y combinar
-* `03` - `COUNT`, `SUM`, `AVG`, `MIN`, `MAX`; `GROUP BY` y su regla de oro; `HAVING`; conteo condicional con `CASE` y `FILTER`; `NULLIF`; indicadores de ventas.
-* `04` - Claves primarias y foráneas; `INNER JOIN` y `LEFT JOIN`; varias tablas; duplicación de filas; `CASE`, agrupamiento por `CASE` y pivotes con agregación condicional.
+* «Agregaciones» - `COUNT`, `SUM`, `AVG`, `MIN`, `MAX`; `GROUP BY` y su regla de oro; `HAVING`; conteo condicional con `CASE` y `FILTER`; `NULLIF`; indicadores de ventas.
+* «Combinación de tablas y lógica condicional» - Claves primarias y foráneas; `INNER JOIN` y `LEFT JOIN`; varias tablas; duplicación de filas; `CASE`, agrupamiento por `CASE` y pivotes con agregación condicional.
 
 #### 🔹 Módulo 3: Análisis
-* `05` - `DATE`, `TIMESTAMP` e `INTERVAL`; `CAST` y `EXTRACT`; rangos semiabiertos; aritmética de fechas; subconsultas escalares, con `IN`, en `FROM` y correlacionadas con `EXISTS`; `WITH`; *CTE* contra subconsultas; `UNION ALL` y `UNION DISTINCT`.
-* `06` - `OVER` y `PARTITION BY`; agregaciones como ventana; `ROW_NUMBER`, `RANK`, `DENSE_RANK`; deduplicación y último registro; `LAG` y `LEAD`; acumulados y promedios móviles con `ROWS BETWEEN`.
+* «Fechas, subconsultas y expresiones de tabla comunes» - `DATE`, `TIMESTAMP` e `INTERVAL`; `CAST` y `EXTRACT`; rangos semiabiertos; aritmética de fechas; subconsultas escalares, con `IN`, en `FROM` y correlacionadas con `EXISTS`; `WITH`; *CTE* contra subconsultas; `UNION ALL` y `UNION DISTINCT`.
+* «Funciones de ventana» - `OVER` y `PARTITION BY`; agregaciones como ventana; `ROW_NUMBER`, `RANK`, `DENSE_RANK`; deduplicación y último registro; `LAG` y `LEAD`; acumulados y promedios móviles con `ROWS BETWEEN`.
 
 #### 🔹 Módulo 4: Ingeniería de datos
-* `07` - Esquemas; `CREATE TABLE` con restricciones; `CREATE TABLE AS`; vistas; `INSERT`, `UPDATE`, `DELETE`; carga incremental con `MERGE`; `DROP`.
-* `08` - Normalizar para operar y denormalizar para analizar; esquema de estrella y tabla ancha; granularidad; validación; medidas de otra granularidad; datos desactualizados.
+* «Tablas, vistas y carga de datos» - Esquemas; `CREATE TABLE` con restricciones; `CREATE TABLE AS`; vistas; `INSERT`, `UPDATE`, `DELETE`; carga incremental con `MERGE`; `DROP`.
+* «Denormalización» - Normalizar para operar y denormalizar para analizar; esquema de estrella y tabla ancha; granularidad; validación; medidas de otra granularidad; datos desactualizados.
 
 #### 🔹 Apéndice: De *DuckDB* a *BigQuery*
-* `09` - *Sandbox* y nivel gratuito; tabla de diferencias de dialecto; costo por bytes procesados y `--dry_run`; particionamiento y *clustering*; `MERGE`; campos anidados con `STRUCT`, `ARRAY_AGG` y `UNNEST`.
+* «Apéndice: de *DuckDB* a *BigQuery*» - *Sandbox* y nivel gratuito; tabla de diferencias de dialecto; costo por bytes procesados y `--dry_run`; particionamiento y *clustering*; `MERGE`; campos anidados con `STRUCT`, `ARRAY_AGG` y `UNNEST`.
 
 > **📝 Nota:** Las celdas `-- TU CÓDIGO AQUÍ` y **✍️ Tu respuesta** son para ti. Cada *notebook* es independiente y se puede abrir y ejecutar por separado.
 
@@ -126,11 +126,11 @@ El entorno se iniciará automáticamente con:
 * *Python* 3.12
 * Extensiones de *Python* y *Jupyter* para VS Code
 * *DuckDB* y *JupySQL* con versiones fijadas en `requirements.txt`
-* Los datos del curso ya generados en `data/thelook.duckdb`
+* Los datos del taller ya generados en `data/thelook.duckdb`
 
-La primera vez tarda unos minutos. Después abre `01_introduccion.ipynb`, elige el kernel **Python 3.12** (`/usr/local/bin/python`) en **Select Kernel** y ejecuta las celdas en orden con `Shift + Enter`.
+La primera vez tarda unos minutos. Después abre [«Introducción»](01_introduccion.ipynb), elige el kernel **Python 3.12** (`/usr/local/bin/python`) en **Select Kernel** y ejecuta las celdas en orden con `Shift + Enter`.
 
-> ⚠️ Las lecciones `07` y `08` escriben en una base de trabajo (`data/curso.duckdb`) que sólo un *notebook* puede tener abierta a la vez. Antes de abrir una de ellas, cierra el *kernel* de las otras (**Kernel → Shut Down**). Las lecciones `01` a `06` abren los datos en sólo lectura y pueden usarse al mismo tiempo.
+> ⚠️ «Tablas, vistas y carga de datos» y «Denormalización» escriben en una base de trabajo (`data/curso.duckdb`) que sólo un *notebook* puede tener abierta a la vez. Antes de abrir una de ellas, cierra el *kernel* de las otras (**Kernel → Shut Down**). Los *notebooks* de «Introducción» a «Funciones de ventana» abren los datos en sólo lectura y pueden usarse al mismo tiempo.
 
 > 💡 Codespaces se detiene solo tras un rato de inactividad; para no gastar tus horas gratuitas, detenlo al terminar: **github.com/codespaces** → `…` → **Stop codespace**.
 
