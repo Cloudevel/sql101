@@ -30,7 +30,7 @@ Al terminar, el participante podrá:
 
 | Min | Bloque | Notebook |
 |---|---|---|
-| 25 | Tablas y relaciones, *SQL* en ingeniería y analítica, *ANSI SQL*, *DuckDB*, entorno y datos | «Introducción» |
+| 25 | Tablas y relaciones, *OLTP* y *OLAP*, *SQL* en ingeniería y analítica, *ANSI SQL*, *DuckDB*, entorno y datos | «Introducción» |
 | 50 | Consultas básicas y ejercicios 1 a 4 | «Consultas básicas» |
 | 40 | Agregaciones y ejercicios 1 a 3 | «Agregaciones» |
 | 45 | `JOIN`, duplicación de filas, `CASE` y ejercicios 1 a 3 | «Combinación de tablas y lógica condicional» |
@@ -38,7 +38,7 @@ Al terminar, el participante podrá:
 | 50 | Fechas, subconsultas, *CTE* contra subconsultas y ejercicios 1 a 3 | «Fechas, subconsultas y expresiones de tabla comunes» |
 | 45 | Funciones de ventana y ejercicios 1 a 3 | «Funciones de ventana» |
 | 35 | Tablas, vistas, *DML*, `MERGE` y ejercicios 1 y 2 | «Tablas, vistas y carga de datos» |
-| 25 | Denormalización y ejercicios 1 y 2 | «Denormalización» |
+| 25 | Denormalización, arquitecturas de *data warehouse* y ejercicios 1 y 2 | «Denormalización» |
 | 30 | Cierre, dudas y práctica sugerida | |
 
 Los ejercicios que no alcancen a resolverse en clase quedan como práctica; los retos son siempre opcionales.

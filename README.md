@@ -76,7 +76,7 @@ A lo largo del taller se analizan los datos de **TheLook**, una tienda de ropa e
 - [«Denormalización»](08_denormalizacion.ipynb)
 
 #### 🔹 Módulo 1: Fundamentos
-* «Introducción» - tablas, relaciones y álgebra relacional; *SQL* en ingeniería y analítica; historia de *SQL* e importancia de *ANSI SQL*; dialectos; por qué *DuckDB* y sus alternativas; entorno, celdas `%%sql` y datos del taller; `INFORMATION_SCHEMA`.
+* «Introducción» - tablas, relaciones y álgebra relacional; *OLTP* y *OLAP*; *SQL* en ingeniería y analítica; historia de *SQL* e importancia de *ANSI SQL*; dialectos; por qué *DuckDB* y sus alternativas; entorno, celdas `%%sql` y datos del taller; `INFORMATION_SCHEMA`.
 * «Consultas básicas» - `SELECT`, alias y columnas calculadas; `SELECT *` en motores columnares; `DISTINCT`; `WHERE` con `AND`, `OR`, `IN`, `BETWEEN`, `LIKE`; `NULL` y `COALESCE`; `ORDER BY`; `FETCH FIRST` y `LIMIT` (y por qué limitar el resultado no limita la búsqueda); orden lógico de ejecución.
 
 #### 🔹 Módulo 2: Resumir y combinar
@@ -89,7 +89,7 @@ A lo largo del taller se analizan los datos de **TheLook**, una tienda de ropa e
 
 #### 🔹 Módulo 4: Ingeniería de datos
 * «Tablas, vistas y carga de datos» - Esquemas; `CREATE TABLE` con restricciones; `CREATE TABLE AS`; vistas; `INSERT`, `UPDATE`, `DELETE`; carga incremental con `MERGE`; `DROP`.
-* «Denormalización» - Normalizar para operar y denormalizar para analizar; esquema de estrella y tabla ancha; granularidad; validación; medidas de otra granularidad; datos desactualizados.
+* «Denormalización» - Normalizar para operar y denormalizar para analizar; esquema de estrella y tabla ancha; arquitecturas de Inmon y Kimball; *data warehouses* en la nube; granularidad; validación; medidas de otra granularidad; datos desactualizados.
 
 
 > **📝 Nota:** Las celdas `-- TU CÓDIGO AQUÍ` y **✍️ Tu respuesta** son para ti. Cada *notebook* es independiente y se puede abrir y ejecutar por separado.
