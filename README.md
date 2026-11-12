@@ -39,7 +39,7 @@ Un taller de **6 horas** sobre *notebooks* de *Jupyter* que corren en **GitHub C
 
 ### 📐 *ANSI SQL* primero
 
-Todo el *SQL* de «Introducción» a «Denormalización» es estándar y funciona, con cambios mínimos, en *PostgreSQL*, *BigQuery*, *Snowflake*, *SQL Server* y otros motores. Cuando un motor usa otra sintaxis, se explica en una **nota de dialecto**. «Apéndice: de *DuckDB* a *BigQuery*» traslada el taller a *BigQuery*.
+Todo el *SQL* de «Introducción» a «Denormalización» es estándar y funciona, con cambios mínimos, en *PostgreSQL*, *BigQuery*, *Snowflake*, *SQL Server* y otros motores. Cuando un motor usa otra sintaxis, se explica en una **nota de dialecto**.
 
 ### 🦆 Motor del taller: *DuckDB*
 
@@ -57,12 +57,11 @@ A lo largo del taller se analizan los datos de **TheLook**, una tienda de ropa e
 | 2. Resumir y combinar | Agregaciones, `GROUP BY`, `HAVING`, `JOIN`, `CASE` | «Agregaciones»<br>«Combinación de tablas y lógica condicional» |
 | 3. Análisis | Fechas e intervalos, subconsultas, *CTE*, funciones de ventana | «Fechas, subconsultas y expresiones de tabla comunes»<br>«Funciones de ventana» |
 | 4. Ingeniería de datos | *DDL*, *DML*, `MERGE`, vistas, denormalización | «Tablas, vistas y carga de datos»<br>«Denormalización» |
-| Apéndice | De *DuckDB* a *BigQuery* | «Apéndice: de *DuckDB* a *BigQuery*» |
 
 ### Práctica
 
 * Los *notebooks* de «Introducción» a «Denormalización» terminan con **ejercicios** y **retos opcionales**; se trabajan en clase y como práctica.
-* Las versiones resueltas están en `soluciones/` (`NN_..._soluciones.ipynb`). «Apéndice: de *DuckDB* a *BigQuery*» no tiene ejercicios.
+* Las versiones resueltas están en `soluciones/` (`NN_..._soluciones.ipynb`).
 
 ### 📚 Contenidos
 
@@ -75,7 +74,6 @@ A lo largo del taller se analizan los datos de **TheLook**, una tienda de ropa e
 - [«Funciones de ventana»](06_funciones_de_ventana.ipynb)
 - [«Tablas, vistas y carga de datos»](07_tablas_vistas_y_carga.ipynb)
 - [«Denormalización»](08_denormalizacion.ipynb)
-- [«Apéndice: de *DuckDB* a *BigQuery*»](09_apendice_bigquery.ipynb)
 
 #### 🔹 Módulo 1: Fundamentos
 * «Introducción» - *SQL* en ingeniería y analítica; historia e importancia de *ANSI SQL*; dialectos; por qué *DuckDB* y sus alternativas; entorno, celdas `%%sql` y datos del taller; `INFORMATION_SCHEMA`.
@@ -93,8 +91,6 @@ A lo largo del taller se analizan los datos de **TheLook**, una tienda de ropa e
 * «Tablas, vistas y carga de datos» - Esquemas; `CREATE TABLE` con restricciones; `CREATE TABLE AS`; vistas; `INSERT`, `UPDATE`, `DELETE`; carga incremental con `MERGE`; `DROP`.
 * «Denormalización» - Normalizar para operar y denormalizar para analizar; esquema de estrella y tabla ancha; granularidad; validación; medidas de otra granularidad; datos desactualizados.
 
-#### 🔹 Apéndice: De *DuckDB* a *BigQuery*
-* «Apéndice: de *DuckDB* a *BigQuery*» - *Sandbox* y nivel gratuito; tabla de diferencias de dialecto; costo por bytes procesados y `--dry_run`; particionamiento y *clustering*; `MERGE`; campos anidados con `STRUCT`, `ARRAY_AGG` y `UNNEST`.
 
 > **📝 Nota:** Las celdas `-- TU CÓDIGO AQUÍ` y **✍️ Tu respuesta** son para ti. Cada *notebook* es independiente y se puede abrir y ejecutar por separado.
 

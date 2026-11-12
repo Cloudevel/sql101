@@ -18,10 +18,6 @@ data/csv/
 data/*.duckdb
 data/*.duckdb.wal
 
-# Credenciales de Google Cloud (apéndice de BigQuery)
-*.json.key
-application_default_credentials.json
-
 # Sistema operativo y editores
 .DS_Store
 Thumbs.db

@@ -2,9 +2,9 @@
 
 Guía operativa para impartir **sql101 · SQL para Ingeniería y Analítica de Datos** con consistencia técnica y pedagógica. El material no fija fechas ni horarios para que sirva en cualquier edición.
 
-## Estructura (6 horas, 9 *notebooks*)
+## Estructura (6 horas, 8 *notebooks*)
 
-Los *notebooks* se numeran por tema, en orden. Cada uno es independiente: tiene su propia celda de configuración y puede abrirse y ejecutarse por separado. Los *notebooks* de «Introducción» a «Denormalización» tienen su versión resuelta en `soluciones/NN_tema_soluciones.ipynb`, que es una copia completa de la lección con las soluciones; «Apéndice: de *DuckDB* a *BigQuery*» no tiene ejercicios.
+Los *notebooks* se numeran por tema, en orden. Cada uno es independiente: tiene su propia celda de configuración y puede abrirse y ejecutarse por separado. Los *notebooks* de «Introducción» a «Denormalización» tienen su versión resuelta en `soluciones/NN_tema_soluciones.ipynb`, que es una copia completa de la lección con las soluciones.
 
 **Estándar del taller:** todo el *SQL* de «Introducción» a «Denormalización» es *ANSI SQL*. Dilo explícitamente al inicio: el motor es *DuckDB*, pero lo que se aprende sirve en cualquier motor. Lo que no es estándar aparece en **notas de dialecto**; no lo enseñes como sintaxis principal.
 
@@ -12,7 +12,7 @@ Los *notebooks* se numeran por tema, en orden. Cada uno es independiente: tiene 
 
 **Datos:** *TheLook*, tienda de ropa ficticia, generada por `scripts/generar_datos.py` con semilla fija: todos ven los mismos resultados. El esquema replica `bigquery-public-data.thelook_ecommerce`.
 
-**Proporción:** cerca de 50% explicación con ejemplos ejecutados, 40% ejercicios en clase y 10% demostración de *BigQuery*.
+**Proporción:** cerca de 50% explicación con ejemplos ejecutados, 40% ejercicios en clase y 10% cierre, dudas y práctica.
 
 ## Objetivo y agenda
 
@@ -39,8 +39,7 @@ Al terminar, el participante podrá:
 | 45 | Funciones de ventana y ejercicios 1 a 3 | «Funciones de ventana» |
 | 35 | Tablas, vistas, *DML*, `MERGE` y ejercicios 1 y 2 | «Tablas, vistas y carga de datos» |
 | 25 | Denormalización y ejercicios 1 y 2 | «Denormalización» |
-| 10 | Demostración de *BigQuery* desde la consola | «Apéndice: de *DuckDB* a *BigQuery*» |
-| 20 | Cierre, dudas y práctica sugerida | |
+| 30 | Cierre, dudas y práctica sugerida | |
 
 Los ejercicios que no alcancen a resolverse en clase quedan como práctica; los retos son siempre opcionales.
 
@@ -54,14 +53,12 @@ Los ejercicios que no alcancen a resolverse en clase quedan como práctica; los 
 - «Funciones de ventana»: `ROW_NUMBER` + filtro es el patrón de deduplicación más usado en ingeniería de datos.
 - «Tablas, vistas y carga de datos»: `MERGE` es la base de la carga incremental; deduplicar el lote antes de aplicarlo.
 - «Denormalización»: una tabla denormalizada debe tener exactamente las filas de su tabla de hechos.
-- «Apéndice: de *DuckDB* a *BigQuery*»: en *BigQuery* se paga por bytes leídos: columnas y particiones, no `LIMIT`.
 
 ## Checklist previa a clase
 
 - Recordar a los alumnos que traigan una cuenta de GitHub con horas disponibles de *Codespaces*.
 - *Codespace* creado desde `main`; `postCreateCommand` terminado y `data/thelook.duckdb` presente.
 - Workflow `notebooks-smoke.yml` en verde: los *notebooks* de «Introducción» a «Denormalización» y sus soluciones corren de principio a fin.
-- Para la demostración de «Apéndice: de *DuckDB* a *BigQuery*»: sesión iniciada en la consola de *BigQuery* y, si se va a mostrar `MERGE`, un proyecto con facturación.
 - Material de la sesión publicado.
 
 ## Checklist de cierre de sesión

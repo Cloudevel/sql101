@@ -4,9 +4,6 @@
 duckdb==2.0.0
 # SQL en las celdas de Jupyter
 jupysql==0.11.1
-# Apéndice de BigQuery (opcional: requiere cuenta de Google Cloud)
-google-cloud-bigquery==3.47.0
-bigquery-magics==0.15.2
 # Jupyter
 jupyterlab==4.6.6
 ipykernel==7.4.0
