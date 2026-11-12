@@ -1,7 +1,7 @@
-"""Genera un conjunto de datos sintético con el esquema de ``thelook_ecommerce``.
+"""Genera un conjunto de datos sintético con un subconjunto compatible del esquema de ``thelook_ecommerce``.
 
 Las tablas son ``distribution_centers``, ``products``, ``users``, ``orders`` y
-``order_items``, con los mismos nombres de columnas que el *dataset* público de
+``order_items``, con nombres de columnas compatibles con el *dataset* público de
 BigQuery ``bigquery-public-data.thelook_ecommerce``. Los datos son ficticios
 (marcas y personas inventadas) y deterministas: con la misma semilla se obtienen
 siempre los mismos registros, de modo que todos los participantes ven los

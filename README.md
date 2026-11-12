@@ -6,7 +6,7 @@
 [![Codespaces](https://img.shields.io/badge/GitHub-Codespaces-brightgreen?style=for-the-badge&logo=github&logoColor=white)](https://codespaces.new/Cloudevel/sql101)
 [![License](https://img.shields.io/badge/License-CC--BY%204.0-blue.svg?style=for-the-badge)](LICENSE)
 
-Este repositorio contiene el material oficial del taller **sql101 · SQL para Ingeniería y Analítica de Datos** de **Cloudevel®**, impartido por José Luis Chiquete. El taller enseña *SQL* apegado al estándar *ANSI*, desde la primera consulta hasta las transformaciones que se usan en ingeniería de datos: agregaciones, combinación de tablas, fechas, expresiones de tabla comunes, funciones de ventana, carga incremental con `MERGE` y denormalización.
+Este repositorio contiene el material oficial del taller **sql101 · SQL para Ingeniería y Analítica de Datos** de **Cloudevel®**, impartido por José Luis Chiquete Valdivieso. El taller enseña *SQL* apegado al estándar *ANSI*, desde la primera consulta hasta las transformaciones que se usan en ingeniería de datos: agregaciones, combinación de tablas, fechas, expresiones de tabla comunes, funciones de ventana, carga incremental con `MERGE` y denormalización.
 
 ---
 
@@ -95,7 +95,7 @@ A lo largo del taller se analizan los datos de **TheLook**, una tienda de ropa e
 > **📝 Nota:** Las celdas `-- TU CÓDIGO AQUÍ` y **✍️ Tu respuesta** son para ti. Cada *notebook* es independiente y se puede abrir y ejecutar por separado.
 
 #### 📁 Datos
-* `scripts/generar_datos.py` - Genera los datos sintéticos de *TheLook* con el mismo esquema que el *dataset* público [`bigquery-public-data.thelook_ecommerce`](https://console.cloud.google.com/marketplace/product/bigquery-public-data/thelook-ecommerce). Son deterministas (semilla 2026): todos los participantes ven los mismos resultados. Incluyen a propósito clientes sin compras, productos sin ventas, productos sin marca y órdenes sin enviar.
+* `scripts/generar_datos.py` - Genera los datos sintéticos de *TheLook* con un subconjunto compatible del esquema del *dataset* público [`bigquery-public-data.thelook_ecommerce`](https://console.cloud.google.com/marketplace/product/bigquery-public-data/thelook-ecommerce). Son deterministas (semilla 2026): todos los participantes ven los mismos resultados. Incluyen a propósito clientes sin compras, productos sin ventas, productos sin marca y órdenes sin enviar.
 * `scripts/cargar_datos.py` - Carga los datos en `data/thelook.duckdb`. Ejecútalo de nuevo para restablecer la base en cualquier momento.
 
 | Tabla | Filas | Contenido |
