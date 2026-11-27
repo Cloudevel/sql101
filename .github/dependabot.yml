@@ -1,0 +1,13 @@
+# Mantiene al día lo que está fijado por versión o por SHA:
+# las actions de los workflows y las dependencias de Python de requirements.txt.
+# Dependabot abre pull requests; nada se actualiza sin revisión.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+  - package-ecosystem: pip
+    directory: /
+    schedule:
+      interval: monthly
