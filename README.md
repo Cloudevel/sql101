@@ -179,4 +179,4 @@ Para más información, visita: https://creativecommons.org/licenses/by/4.0/
 
 Véase el archivo [LICENSE](LICENSE) para los términos completos.
 
-&copy; José Luis Chiquete Valdivieso. 2017-2026.
+&copy; José Luis Chiquete Valdivieso. 2017-2027.
