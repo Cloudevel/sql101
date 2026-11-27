@@ -1,6 +1,6 @@
 # Instructor Guide - sql101
 
-Guía operativa para impartir **sql101 · SQL para Ingeniería y Analítica de Datos** con consistencia técnica y pedagógica. El material no fija fechas ni horarios para que sirva en cualquier edición.
+Guía operativa para impartir **sql101 · SQL para Ingeniería y Analítica de Datos** de **Cloudevel®** con consistencia técnica y pedagógica. El material no fija fechas ni horarios para que sirva en cualquier edición.
 
 ## Estructura (6 horas, 8 *notebooks*)
 

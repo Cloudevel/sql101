@@ -6,7 +6,7 @@
 [![Codespaces](https://img.shields.io/badge/GitHub-Codespaces-brightgreen?style=for-the-badge&logo=github&logoColor=white)](https://codespaces.new/Cloudevel/sql101)
 [![License](https://img.shields.io/badge/License-CC--BY%204.0-blue.svg?style=for-the-badge)](LICENSE)
 
-Este repositorio contiene el material oficial del taller **sql101 · SQL para Ingeniería y Analítica de Datos** de **Cloudevel®**, impartido por José Luis Chiquete Valdivieso. El taller enseña *SQL* apegado al estándar *ANSI*, desde la primera consulta hasta las transformaciones que se usan en ingeniería de datos: agregaciones, combinación de tablas, fechas, expresiones de tabla comunes, funciones de ventana, carga incremental con `MERGE` y denormalización.
+Este repositorio contiene el material oficial del taller **sql101 · SQL para Ingeniería y Analítica de Datos** de [Cloudevel®](https://cloudevel.com), impartido por José Luis Chiquete Valdivieso. El taller enseña *SQL* apegado al estándar *ANSI*, desde la primera consulta hasta las transformaciones que se usan en ingeniería de datos: agregaciones, combinación de tablas, fechas, expresiones de tabla comunes, funciones de ventana, carga incremental con `MERGE` y denormalización.
 
 ---
 
