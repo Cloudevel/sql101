@@ -1,5 +1,5 @@
 {
-  "name": "sql101 · SQL para Ingeniería y Analítica de Datos (Cloudevel)",
+  "name": "cd601 · SQL para Ingeniería y Analítica de Datos (Cloudevel)",
   "image": "mcr.microsoft.com/devcontainers/python:3.3.4-3.12-bookworm",
 
   "hostRequirements": {
