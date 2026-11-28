@@ -1,6 +1,6 @@
-# Instructor Guide - sql101
+# Instructor Guide - cd601
 
-Guía operativa para impartir **sql101 · SQL para Ingeniería y Analítica de Datos** de **Cloudevel®** con consistencia técnica y pedagógica. El material no fija fechas ni horarios para que sirva en cualquier edición.
+Guía operativa para impartir **cd601 · SQL para Ingeniería y Analítica de Datos** de **Cloudevel®** con consistencia técnica y pedagógica. El material no fija fechas ni horarios para que sirva en cualquier edición.
 
 ## Estructura (6 horas, 8 *notebooks*)
 

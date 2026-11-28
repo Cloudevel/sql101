@@ -1,12 +1,12 @@
-# SQL para Ingeniería y Analítica de Datos (sql101)
+# SQL para Ingeniería y Analítica de Datos (cd601)
 
 [![SQL](https://img.shields.io/badge/SQL-ANSI-336791?style=for-the-badge)](https://modern-sql.com/standard)
 [![DuckDB](https://img.shields.io/badge/Motor-DuckDB-FFF000?style=for-the-badge&logo=duckdb&logoColor=black)](https://duckdb.org/)
 [![Python](https://img.shields.io/badge/Python-3.12-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![Codespaces](https://img.shields.io/badge/GitHub-Codespaces-brightgreen?style=for-the-badge&logo=github&logoColor=white)](https://codespaces.new/Cloudevel/sql101)
+[![Codespaces](https://img.shields.io/badge/GitHub-Codespaces-brightgreen?style=for-the-badge&logo=github&logoColor=white)](https://codespaces.new/Cloudevel/cd601)
 [![License](https://img.shields.io/badge/License-CC--BY%204.0-blue.svg?style=for-the-badge)](LICENSE)
 
-Este repositorio contiene el material oficial del taller **sql101 · SQL para Ingeniería y Analítica de Datos** de [Cloudevel®](https://cloudevel.com), impartido por José Luis Chiquete Valdivieso. El taller enseña *SQL* apegado al estándar *ANSI*, desde la primera consulta hasta las transformaciones que se usan en ingeniería de datos: agregaciones, combinación de tablas, fechas, expresiones de tabla comunes, funciones de ventana, carga incremental con `MERGE` y denormalización.
+Este repositorio contiene el material oficial del taller **cd601 · SQL para Ingeniería y Analítica de Datos** de [Cloudevel®](https://cloudevel.com), impartido por José Luis Chiquete Valdivieso. El taller enseña *SQL* apegado al estándar *ANSI*, desde la primera consulta hasta las transformaciones que se usan en ingeniería de datos: agregaciones, combinación de tablas, fechas, expresiones de tabla comunes, funciones de ventana, carga incremental con `MERGE` y denormalización.
 
 ---
 
@@ -135,8 +135,8 @@ Si prefieres trabajar en tu máquina:
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/Cloudevel/sql101.git
-cd sql101
+git clone https://github.com/Cloudevel/cd601.git
+cd cd601
 
 # Crear entorno virtual (Python 3.12)
 python -m venv venv

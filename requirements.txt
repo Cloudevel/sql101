@@ -1,4 +1,4 @@
-# Entorno del curso sql101 "SQL para Ingeniería y Analítica de Datos" (Python 3.12)
+# Entorno del curso cd601 "SQL para Ingeniería y Analítica de Datos" (Python 3.12)
 # Versiones fijadas el 2026-11-10: no actualizar durante una edición del curso.
 # Motor de base de datos (MERGE requiere DuckDB 1.4 o superior)
 duckdb==2.0.0
